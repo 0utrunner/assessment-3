@@ -1,0 +1,20 @@
+{% extends 'ggs_app/main.html' %} {% block content %}
+<h2 style="text-align: center; font-family: impact">
+  An extra boost for gaming or the gym. It's not cheating, is it?
+</h2>
+<div class='row'>
+    {% for item in supplements %}
+        {% if item.price == 45 %}
+            <div class='col-lg-4'>
+                <img src='{{ item.photo }}' width='420' height='480'>
+                <div class='product'>
+                    <h5>{{ item.name }}</h5>
+                    <hr>
+                    <button data-item={{ item.id }} data-action='add' class='btn btn-outline-secondary add-btn update-cart'>Add to Cart</button>
+                    <h3 style='display:inline; float: right;'>${{ item.price }}</h3>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

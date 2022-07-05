@@ -1,0 +1,44 @@
+body{
+    background: url(../bgimg2.jpg);
+    color: whitesmoke;
+}
+
+#page-bg{
+    background-color: rgb(10, 0, 125);
+    border-radius: 4px;
+    box-shadow: 0 0 0 2pt rgb(0, 0, 0);
+    padding: 15px;
+    margin: 5px;
+    height: auto;
+}
+
+.product{
+    box-shadow: 0 0 0 2pt rgb(0, 0, 0);
+    background-color: rgb(100, 100, 100);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.cart-row{
+    display: flex;
+    align-items: flex-stretch;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+#myList ul{
+    list-style: none;
+}
+
+#myList li{
+    display: inline;
+}
+
+#myList img{
+    display: inline;
+}
+
+#myList h4{
+    display: inline;
+}

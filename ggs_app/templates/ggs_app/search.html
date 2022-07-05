@@ -1,0 +1,12 @@
+{% extends 'ggs_app/main.html' %} 
+{% block scripts %}<script src="/static/js/searching.js" defer></script>{% endblock %}
+{% block content %}
+<h2 style="text-align: center; font-family: impact">
+  Looking for something specific?
+</h2>
+<form id="search-bar" style="text-align: center">
+  <input id="item" />
+  <button type="submit">Search</button>
+</form>
+<ul id="myList"></ul>
+{% endblock %}
